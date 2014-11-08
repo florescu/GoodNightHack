@@ -1,0 +1,13 @@
+import android.app.Activity;
+import android.os.Bundle;
+
+import com.thedrinkchallenge.www.R;
+
+
+public class blocked_numbers extends Activity {
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.BlockNumber);
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TheDrinkChallenge</string>
+    <string name="Take_Test_text">Take Test</string>
+	<string name="Call_Taxi_text">Call Taxi</string>
+	<string name="Achievements_text">Achievements</string>
+	<string name="Claim_Rewards_text">Claim Rewards</string>
+	<string name="Block_Numbers_text">Block Numbers</string>
+	<string name="Share_Location_text">Share Location</string>
+	<string name="BAC_text">BAC Table</string>
+</resources>

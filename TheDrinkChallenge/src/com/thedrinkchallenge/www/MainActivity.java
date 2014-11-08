@@ -1,10 +1,13 @@
 package com.thedrinkchallenge.www;
 
-import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Contacts;
 import android.provider.ContactsContract;
+import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -34,9 +37,10 @@ public class MainActivity extends Activity {
     }
     
     public void blockPhoneNumbers(View view){
-		Intent intent = new Intent(Intent.ACTION_PICK);
-        intent.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE);
-        startActivityForResult(intent, 1);       
-	}
+    	Intent intent = new Intent(this, BlockedNumbers.class);
+    	startActivity(intent);
+    }
+    
+   
     
 }//class

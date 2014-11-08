@@ -1,0 +1,67 @@
+package com.thedrinkchallenge.www;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
+import android.os.Bundle;
+import android.provider.Contacts;
+import android.provider.ContactsContract;
+import android.provider.ContactsContract.CommonDataKinds.Phone;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+
+public class MainActivity extends Activity {
+	
+	private static final int PICK_CONTACT = 1; 
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+
+        return super.onOptionsItemSelected(item);
+    }
+    
+    public void blockPhoneNumbers(View view){
+    	//Intent intent = new Intent(this, BlockedNumbers.class);)
+    	//startActivity(intent);
+    	
+    	Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
+        startActivityForResult(intent, PICK_CONTACT);
+    }
+    
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        // If the request went well (OK) and the request was PICK_CONTACT_REQUEST
+        if (resultCode == Activity.RESULT_OK && requestCode == PICK_CONTACT) {
+            // Perform a query to the contact's content provider for the contact's name
+            Cursor cursor = getContentResolver().query(data.getData(),
+            											new String[] {ContactsContract.Contacts.DISPLAY_NAME}, 
+            											null, 
+            											null, 
+            											null);
+            if (cursor.moveToFirst()) { // True if the cursor is not empty
+                int columnIndex = cursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME);
+                String contactName = cursor.getString(columnIndex);
+                int phoneNumberIndex = cursor.
+            }
+        }
+    }
+    
+}//class
