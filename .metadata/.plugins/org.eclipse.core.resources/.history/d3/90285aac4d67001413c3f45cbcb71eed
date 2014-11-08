@@ -1,0 +1,7 @@
+package com.thedrinkchallenge.www;
+
+import android.support.v7.app.Activity;
+
+public class ButtonActivity extends Activity{
+
+}

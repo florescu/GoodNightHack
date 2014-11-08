@@ -1,0 +1,13 @@
+package com.thedrinkchallenge.www;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+
+public class ButtonActivity extends Activity{
+	 protected void onCreate(Bundle icicle) {
+         super.onCreate(icicle);
+         setContentView(R.layout.activity_main);
+         final Button blockNumbersButton = (Button) findViewById(R.id.blockNumbersButton);
+     }
+}

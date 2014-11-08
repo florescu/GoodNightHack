@@ -1,0 +1,29 @@
+package com.thedrinkchallenge.www;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.widget.Toast;
+
+//Receiver class for listening outgoing calls and messages
+public class NumberListener extends BroadcastReceiver{
+	
+}
+
+//Receiver for Listening outgoing call(Look At AndroidManifest.xml file)
+public class CustomOutGoingCallListener extends BroadcastReceiver {
+
+	@Override
+	public void onReceive(Context context, Intent intent) {
+		// TODO Auto-generated method stub
+		String number=intent.getStringExtra(Intent.EXTRA_PHONE_NUMBER).toString();//Getting the Contact no in which call is initiated
+		
+		if(number.contentEquals("888888"))//Checking the contact Number.Simply remove this if condition you want to block all calls.
+		{
+			setResultData(null);//Canceling call operation 
+			Toast.makeText(context, "This call is not Allowed", Toast.LENGTH_LONG).show();
+		}
+
+	}
+
+}

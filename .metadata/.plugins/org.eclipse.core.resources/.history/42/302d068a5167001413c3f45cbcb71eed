@@ -1,0 +1,21 @@
+package com.thedrinkchallenge.www;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+
+public class ButtonActivity extends Activity{
+	@Override 
+	protected void onCreate(Bundle icicle) {
+         super.onCreate(icicle);
+         setContentView(R.layout.activity_main);
+    }
+	 
+	public void blockPhoneNumbers(View view){
+		 Intent intent = new Intent(Intent.ACTION_PICK);
+         // BoD con't: CONTENT_TYPE instead of CONTENT_ITEM_TYPE
+         intent.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_ITEM_TYPE);
+         startActivityForResult(intent, 1);       
+	    	
+	}
+}

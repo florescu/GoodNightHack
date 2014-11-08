@@ -1,0 +1,11 @@
+package com.thedrinkchallenge.www;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class ButtonActivity extends Activity{
+	 protected void onCreate(Bundle icicle) {
+         super.onCreate(icicle);
+         setContentView(R.layout.activity_main);
+     }
+}
