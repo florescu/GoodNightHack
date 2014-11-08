@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.Contacts;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.view.Menu;
@@ -41,6 +40,10 @@ public class MainActivity extends Activity {
     	startActivity(intent);
     }
     
+    public void takeTestAction(View view){
+    	Intent intent = new Intent(this, TakeTestAction.class);
+    	startActivity(intent);
+    }
    
     
 }//class

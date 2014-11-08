@@ -1,0 +1,36 @@
+package com.thedrinkchallenge.www;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.widget.TextView;
+import java.util.*;
+
+public class TakeTestAction extends Activity {
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.take_test);
+        TextView textView = (TextView) findViewById(R.id.testResultString);
+        Random r = new Random();
+        textView.setText(r.nextDouble() + "");
+        
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("UserPref", 0); 
+        Editor editor = pref.edit();
+        
+        //Took test before?
+        //If no profile is found, create a new one
+        if (pref.getString("currentPoints", null).isEmpty())
+        	editor.putInt("currentPoints", 0);
+        	
+        
+        //Get day of month.
+        
+        //Get current number of points.
+        
+        //Update current number of points according to BAC and day of test.
+    }
+}

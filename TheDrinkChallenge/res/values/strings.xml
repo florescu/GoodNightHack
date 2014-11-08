@@ -9,9 +9,11 @@
 	<string name="Block_Numbers_text">Block Numbers</string>
 	<string name="Share_Location_text">Share Location</string>
 	<string name="BAC_text">BAC Table</string>
-	<string name="contact1"></string>
-	<string name="contact2"></string>
-	<string name="contact3"></string>
-	<string name="contact4"></string>
-	<string name="contact5"></string>
+	<string name="contact1">Contact: </string>
+	<string name="contact2">Contact: </string>
+	<string name="contact3">Contact: </string>
+	<string name="contact4">Contact: </string>
+	<string name="contact5">Contact: </string>
+	<string name="testResult">Test Result: </string>
+	<string name="pointsBalance">Balance: </string>
 </resources>

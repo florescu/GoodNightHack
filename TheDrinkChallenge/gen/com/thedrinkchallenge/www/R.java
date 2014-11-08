@@ -1660,6 +1660,11 @@ containing a value of this type.
         public static final int checkbox=0x7f09002b;
         public static final int claimRewardsButton=0x7f090044;
         public static final int collapseActionView=0x7f090015;
+        public static final int contact1=0x7f090049;
+        public static final int contact2=0x7f09004a;
+        public static final int contact3=0x7f09004b;
+        public static final int contact4=0x7f09004c;
+        public static final int contact5=0x7f09004d;
         public static final int decor_content_parent=0x7f090031;
         public static final int default_activity_button=0x7f090026;
         public static final int dialog=0x7f090019;
@@ -1680,6 +1685,7 @@ containing a value of this type.
         public static final int never=0x7f090017;
         public static final int none=0x7f09000f;
         public static final int normal=0x7f09000b;
+        public static final int pointsBalanceString=0x7f09004f;
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
         public static final int radio=0x7f09002d;
@@ -1702,10 +1708,12 @@ containing a value of this type.
         public static final int submit_area=0x7f09003e;
         public static final int tabMode=0x7f09000c;
         public static final int takeTestButton=0x7f090041;
+        public static final int testResultString=0x7f09004e;
         public static final int title=0x7f090029;
         public static final int top=0x7f09001f;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;
+        public static final int viewBlockNumber=0x7f090048;
         public static final int withText=0x7f090018;
         public static final int wrap_content=0x7f090009;
     }
@@ -1762,6 +1770,7 @@ containing a value of this type.
         public static final int block_number=0x7f030018;
         public static final int main=0x7f030019;
         public static final int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static final int take_test=0x7f03001b;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -1833,6 +1842,8 @@ containing a value of this type.
         public static final int contact3=0x7f0a0019;
         public static final int contact4=0x7f0a001a;
         public static final int contact5=0x7f0a001b;
+        public static final int pointsBalance=0x7f0a001d;
+        public static final int testResult=0x7f0a001c;
     }
     public static final class style {
         /** 

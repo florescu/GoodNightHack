@@ -358,6 +358,11 @@ int id callTaxiButton 0x7f090042
 int id checkbox 0x7f09002b
 int id claimRewardsButton 0x7f090044
 int id collapseActionView 0x7f090015
+int id contact1 0x7f090049
+int id contact2 0x7f09004a
+int id contact3 0x7f09004b
+int id contact4 0x7f09004c
+int id contact5 0x7f09004d
 int id decor_content_parent 0x7f090031
 int id default_activity_button 0x7f090026
 int id dialog 0x7f090019
@@ -378,6 +383,7 @@ int id middle 0x7f09001d
 int id never 0x7f090017
 int id none 0x7f09000f
 int id normal 0x7f09000b
+int id pointsBalanceString 0x7f09004f
 int id progress_circular 0x7f090007
 int id progress_horizontal 0x7f090008
 int id radio 0x7f09002d
@@ -400,10 +406,12 @@ int id split_action_bar 0x7f090004
 int id submit_area 0x7f09003e
 int id tabMode 0x7f09000c
 int id takeTestButton 0x7f090041
+int id testResultString 0x7f09004e
 int id title 0x7f090029
 int id top 0x7f09001f
 int id up 0x7f090001
 int id useLogo 0x7f090013
+int id viewBlockNumber 0x7f090048
 int id withText 0x7f090018
 int id wrap_content 0x7f090009
 int integer abc_max_action_buttons 0x7f080000
@@ -434,6 +442,7 @@ int layout activity_main 0x7f030017
 int layout block_number 0x7f030018
 int layout main 0x7f030019
 int layout support_simple_spinner_dropdown_item 0x7f03001a
+int layout take_test 0x7f03001b
 int menu main 0x7f0c0000
 int string Achievements_text 0x7f0a0012
 int string BAC_text 0x7f0a0016
@@ -463,6 +472,8 @@ int string contact2 0x7f0a0018
 int string contact3 0x7f0a0019
 int string contact4 0x7f0a001a
 int string contact5 0x7f0a001b
+int string pointsBalance 0x7f0a001d
+int string testResult 0x7f0a001c
 int style AppBaseTheme 0x7f0b00eb
 int style AppTheme 0x7f0b00ec
 int style Base_TextAppearance_AppCompat 0x7f0b0098

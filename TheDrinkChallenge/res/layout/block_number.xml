@@ -3,12 +3,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:gravity="center">
+    android:gravity="center"
+    android:id="@+id/viewBlockNumber">
 
     <TextView
+        android:id="@+id/contact1"
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:text="@string/contact1" 
+	    android:clickable="true"
+	    android:onClick="showContact1"
     />
     
+    <TextView
+        android:id="@+id/contact2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/contact2" 
+	    android:clickable="true"
+	    android:onClick="showContact2"
+    />
+    
+    <TextView
+        android:id="@+id/contact3"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/contact3" 
+	    android:clickable="true"
+	    android:onClick="showContact3"
+    />
+    
+    <TextView
+        android:id="@+id/contact4"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/contact4" 
+	    android:clickable="true"
+	    android:onClick="showContact4"
+    />
+    
+    <TextView
+        android:id="@+id/contact5"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/contact5" 
+	    android:clickable="true"
+	    android:onClick="showContact5"
+    />
 </LinearLayout>
