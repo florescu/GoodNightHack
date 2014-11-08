@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TheDrinkChallenge</string>
+    <string name="Take_Test_text">Take Test</string>
+	<string name="Call_Taxi_text">Take Test</string>
+</resources>
