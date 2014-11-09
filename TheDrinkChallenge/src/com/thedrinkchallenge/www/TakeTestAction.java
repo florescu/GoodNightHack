@@ -1,25 +1,50 @@
 package com.thedrinkchallenge.www;
 
+import org.apache.commons.net.ntp.NTPUDPClient;
+import org.apache.commons.net.ntp.TimeInfo;
+
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.location.Location;
 import android.location.LocationManager;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.widget.TextView;
+
+import java.net.InetAddress;
 import java.util.*;
 
 public class TakeTestAction extends Activity {
+	public static final String TIME_SERVER = "time-a.nist.gov";
+	
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.take_test);
-        TextView textView = (TextView) findViewById(R.id.testResultString);
+        
+        //Check time is later than 8PM and less than 4 AM next day to allow test taking.
+       /* long networkTS = 0;
+        
+        LocationManager locMan = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+        Location currentLocation;
+        if (locMan != null)
+        {
+        	currentLocation = locMan.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+        	networkTS = currentLocation. .getTime();
+        }
+        TextView networkTime = (TextView) findViewById(R.id.networkTimeString);
+        networkTime.setText("Network time: " + networkTS);
+        */
+        TextView testResult = (TextView) findViewById(R.id.testResultString);
         Random r = new Random();
         Double rd = r.nextDouble();
-        textView.setText(rd + "");
+        testResult.setText(rd + "");
         
         SharedPreferences pref = getApplicationContext().getSharedPreferences("UserPref", 0); 
         Editor editor = pref.edit();
@@ -46,9 +71,11 @@ public class TakeTestAction extends Activity {
         int noOfDaysTestNotTaken = pref.getInt("noOfDaysTestNotTaken", 0);
         
         //Get month day.
-        int monthDay = 0;
-       // LocationManager locMan = (LocationManager) this.getSystemService(this.LOCATION_SERVICE);
-       // long networkTS = locMan.getLastKnownLocation(LocationManager.NETWORK_PROVIDER).getTime();
+        int monthDay = pref.getInt("currentMonthDay", 0);
+        if (monthDay == 28)
+        	monthDay = 1;
+        else
+        	monthDay++;
         
         if (monthDay == 1) //first day in month.
         {
@@ -69,11 +96,16 @@ public class TakeTestAction extends Activity {
         editor.putInt("currentPoints", currentPoints);
         editor.putInt("noOfDaysTestNotTaken", noOfDaysTestNotTaken);
         editor.putInt("currentPointsForMonth", currentPointsForMonth);
+        editor.putInt("currentMonthDay", monthDay);
         editor.commit();
         
         //Display currentNumberOfPoints
         TextView balance = (TextView) findViewById(R.id.pointsBalanceString);
         balance.setText("Balance: " + currentPoints);
+        
+        //Display current day in 4 weeks period:
+        TextView monthDayString = (TextView) findViewById(R.id.monthDayString);
+        monthDayString.setText("Day of Test in 4 weeks: " + monthDay);
         
     }
 }

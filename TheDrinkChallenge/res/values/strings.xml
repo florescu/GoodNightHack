@@ -16,4 +16,7 @@
 	<string name="contact5">Contact: </string>
 	<string name="testResult">Test Result: </string>
 	<string name="pointsBalance">Balance: </string>
+	<string name="monthDay">Day of Test in 4 weeks: </string>
+	<string name="networkTime">Network time: </string>
+	
 </resources>

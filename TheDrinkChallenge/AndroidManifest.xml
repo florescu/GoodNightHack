@@ -9,7 +9,10 @@
         android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
-       
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />   
+	<uses-permission android:name="android.permission.INTERNET" />   
+	
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -46,5 +49,5 @@
             </intent-filter>
         </activity>
     </application>
-
+	
 </manifest>

@@ -380,6 +380,8 @@ int id image 0x7f090025
 int id listMode 0x7f09000a
 int id list_item 0x7f090027
 int id middle 0x7f09001d
+int id monthDayString 0x7f090050
+int id networkTimeString 0x7f090051
 int id never 0x7f090017
 int id none 0x7f09000f
 int id normal 0x7f09000b
@@ -472,6 +474,8 @@ int string contact2 0x7f0a0018
 int string contact3 0x7f0a0019
 int string contact4 0x7f0a001a
 int string contact5 0x7f0a001b
+int string monthDay 0x7f0a001e
+int string networkTime 0x7f0a001f
 int string pointsBalance 0x7f0a001d
 int string testResult 0x7f0a001c
 int style AppBaseTheme 0x7f0b00eb

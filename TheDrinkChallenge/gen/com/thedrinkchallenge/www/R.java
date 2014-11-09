@@ -1682,6 +1682,8 @@ containing a value of this type.
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f090027;
         public static final int middle=0x7f09001d;
+        public static final int monthDayString=0x7f090050;
+        public static final int networkTimeString=0x7f090051;
         public static final int never=0x7f090017;
         public static final int none=0x7f09000f;
         public static final int normal=0x7f09000b;
@@ -1842,6 +1844,8 @@ containing a value of this type.
         public static final int contact3=0x7f0a0019;
         public static final int contact4=0x7f0a001a;
         public static final int contact5=0x7f0a001b;
+        public static final int monthDay=0x7f0a001e;
+        public static final int networkTime=0x7f0a001f;
         public static final int pointsBalance=0x7f0a001d;
         public static final int testResult=0x7f0a001c;
     }
