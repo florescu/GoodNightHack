@@ -1,28 +1,13 @@
 package com.thedrinkchallenge.www;
 
-<<<<<<< HEAD
-/*import org.apache.commons.*;
-import org.apache.commons.net.ntp.NTPUDPClient;
-import org.apache.commons.net.ntp.TimeInfo;*/
-=======
 import java.util.Random;
->>>>>>> origin/master
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/master
 import android.location.Criteria;
->>>>>>> origin/master
 import android.location.Location;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
