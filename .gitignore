@@ -42,3 +42,11 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+TheDrinkChallenge/bin/classes.dex
+TheDrinkChallenge/bin/classes.dex
+*.class
+*.dex
+TheDrinkChallenge/bin/R.txt
+TheDrinkChallenge/bin/resources.ap_
+TheDrinkChallenge/gen/com/thedrinkchallenge/www/R.java

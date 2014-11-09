@@ -7,6 +7,13 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+<<<<<<< HEAD
+=======
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationManager;
+import android.net.ConnectivityManager;
+>>>>>>> origin/master
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -18,19 +25,8 @@ public class TakeTestAction extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.take_test);
         
-        //Check time is later than 8PM and less than 4 AM next day to allow test taking.
-       /* long networkTS = 0;
-        
-        LocationManager locMan = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
-        Location currentLocation;
-        if (locMan != null)
-        {
-        	currentLocation = locMan.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-        	networkTS = currentLocation. .getTime();
-        }
-        TextView networkTime = (TextView) findViewById(R.id.networkTimeString);
-        networkTime.setText("Network time: " + networkTS);
-        */
+        //Location location = getLocation();
+
         TextView testResult = (TextView) findViewById(R.id.testResultString);
         Random r = new Random();
         Double rd = r.nextDouble();
@@ -138,4 +134,64 @@ public class TakeTestAction extends Activity {
         
         
     }
-}
+	
+	/*public Location getLocation()
+	{
+		  //Check time is later than 8PM and less than 4 AM next day to allow test taking.
+        long networkTS = 0;
+        LocationManager locMan = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+        Location location;
+        
+        // getting GPS status
+        boolean isGPSEnabled = locMan
+                .isProviderEnabled(LocationManager.GPS_PROVIDER);
+
+        // getting network status
+        boolean isNetworkEnabled = locMan
+                .isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+
+
+        Log.d("nw", "nw: " + isNetworkEnabled);
+        Log.d("nw", "gps: " + isGPSEnabled);
+        
+        
+        if (!isGPSEnabled && !isNetworkEnabled) {
+            // no network provider is enabled
+        } else {
+            if (isNetworkEnabled) {
+            	locMan.requestLocationUpdates(
+                        LocationManager.NETWORK_PROVIDER,
+                        1000,
+                        0, this);
+                Log.d("Network", "Network Enabled");
+                if (locMan != null) {
+                    location = locMan
+                            .getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+                    if (location != null) {
+                    	networkTS = location.getTime();
+                    }
+                }
+            }
+            
+            if (isGPSEnabled) {
+                if (location == null) {
+                	locMan.requestLocationUpdates(
+                            LocationManager.GPS_PROVIDER,
+                            1000,
+                            0, this);
+                    Log.d("GPS", "GPS Enabled");
+                    if (locMan != null) {
+                        location = locMan
+                                .getLastKnownLocation(LocationManager.GPS_PROVIDER);
+                        if (location != null) {
+                        	networkTS = location.getTime();
+                        }
+                    }
+                }
+            }
+            TextView networkTime = (TextView) findViewById(R.id.networkTimeString);
+            networkTime.setText("Network time: " + networkTS);
+        }
+	}*/
+	
+}//class
