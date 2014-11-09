@@ -7,13 +7,12 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-<<<<<<< HEAD
-=======
+
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
->>>>>>> origin/master
+
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -82,34 +81,41 @@ public class TakeTestAction extends Activity {
         	daysInRow = 1;
         }
         
-        TextView daysInRowString = (TextView) findViewById(R.id.daysInRowString);
 
       
+
         
         if(daysInRow == 7){
         	
+              
+
         	  AlertDialog alertDialog = new AlertDialog.Builder(this).create();
               alertDialog.setTitle("Achievement Unlocked - Rookie responsible drinker");
               alertDialog.setMessage("You have taken the test 7 days in a row!");
-             
               alertDialog.show();
+              //days7.setText("Rookie in responsible drinking");
         }
         
         else if(daysInRow == 14){
+        	 
+
         	AlertDialog alertDialog = new AlertDialog.Builder(this).create();
             alertDialog.setTitle("Achievement Unlocked - Professional responsible drinker");
             alertDialog.setMessage("You have taken the test 14 days in a row!");
            
             alertDialog.show();
+            //days14.setText("Professional in responsible drinking");
         }
         
         else if(daysInRow == 28){
+        	 
+
         	AlertDialog alertDialog = new AlertDialog.Builder(this).create();
             alertDialog.setTitle("Achievement Unlocked - World Class responsible drinker");
             alertDialog.setMessage("You have taken the test 28 days in a row!");
            
             alertDialog.show();
-        	
+            //days28.setText("World Class in responsible drinking");
         }
         
         //Update the current number of points.

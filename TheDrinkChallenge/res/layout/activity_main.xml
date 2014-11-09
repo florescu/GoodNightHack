@@ -17,17 +17,14 @@
         android:text="@string/Take_Test_text" 
         android:onClick="takeTestAction" />
 
-    <Button
-        android:id="@+id/callTaxiButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/Call_Taxi_text" />
+    
 
     <Button
         android:id="@+id/achievementsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Achievements_text" />
+        android:text="@string/Achievements_text" 
+        android:onClick="displayAchievements"/>
     
      <Button
         android:id="@+id/claimRewardsButton"
@@ -35,18 +32,8 @@
         android:layout_height="wrap_content"
         android:text="@string/Claim_Rewards_text" />
      
-      <Button
-        android:id="@+id/blockNumbersButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/Block_Numbers_text" 
-        android:onClick="blockPhoneNumbers" />
       
-       <Button
-        android:id="@+id/shareLocationButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/Share_Location_text" />
+      
        
         <Button
         android:id="@+id/BACButton"

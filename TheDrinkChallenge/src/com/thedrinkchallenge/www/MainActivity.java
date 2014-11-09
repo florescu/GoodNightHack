@@ -35,10 +35,7 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
     
-    public void blockPhoneNumbers(View view){
-    	Intent intent = new Intent(this, BlockedNumbers.class);
-    	startActivity(intent);
-    }
+   
     
     public void takeTestAction(View view){
     	Intent intent = new Intent(this, TakeTestAction.class);
@@ -47,6 +44,11 @@ public class MainActivity extends Activity {
    
     public void showBacTable(View view){
     	Intent intent = new Intent(this, BacTable.class);
+    	startActivity(intent);
+    }
+    
+    public void displayAchievements(View view){
+    	Intent intent = new Intent(this, Achievements.class);
     	startActivity(intent);
     }
     
