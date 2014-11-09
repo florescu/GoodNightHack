@@ -52,8 +52,7 @@
         android:id="@+id/BACButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/BAC_text" 
-        android:onClick="showBacTable"/>
+        android:text="@string/BAC_text" />
         
         
 </LinearLayout>

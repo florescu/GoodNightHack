@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+
+    android:layout_height="wrap_content" >
+
+<TableLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="BAC Level"
+            android:padding="3dip"/>
+        <TextView
+            android:text="Effects"
+            android:gravity="center"
+            android:padding="3dip"/>
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="0.02 - 0.03 BAC"
+            android:padding="3dip"/>
+        <TextView
+            android:gravity="center_vertical|right"
+			android:text="No loss of coordination,
+			\nslight euphoria and loss of
+            \n loss of shyness.
+            \nMildly relaxed and maybe 
+            \n a little lightheaded.
+            \n"
+            android:padding="1dip"/>
+    </TableRow>
+	<View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
+	
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="0.04 - 0.06 BAC"
+            android:padding="3dip"/>
+        <TextView
+            android:text="Feeling of well-being, 
+            \nlower inhibitions, and relaxation. 
+            \nJudgement is slightly 
+            \nimpaired. Minor impairment 
+            \nof reasoning and memory, 
+            \nand less cautious. 
+            \nYour behavior can become 
+            \nexaggerated and emotions 
+            \n(ex. happiness or 
+            \nsadness) felt 
+            \nmore intensely.
+            \n"
+            android:gravity="right"
+            android:padding="3dip"/>
+    </TableRow>
+
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
+    <TableRow>
+
+    
+        <TextView
+            android:layout_column="1"
+            android:text="0.07 - 0.09 BAC"
+            android:padding="3dip"/>
+         <TextView
+            android:text="Impairment present in everyone. 
+            \nDriving skills such as vision, 
+            \nsteering, lane changing 
+            \nand reaction time are 
+            \nimpaired along with balance, 
+            \nspeech, and hearing. 
+            \nFeelings of Euphoria in some. 
+            \nSelf-control and caution 
+            \nare reduced. Riskier behaviors 
+            \ndisplayed. Judgement, reason 
+            \nand memory suffer. You are 
+            \nlikely to believe that you 
+            \nare functioning better than 
+            \nyou really are.
+            \n"
+            android:gravity="right"
+            android:padding="3dip"/>
+    </TableRow>
+     <View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
+    <TableRow>
+
+    
+        <TextView
+            android:layout_column="1"
+            android:text="0.10 - 0.12 BAC"
+            android:padding="3dip"/>
+         <TextView
+            android:text="Significant impairment to 
+            \nmotor coordination and loss 
+            \nof good judgment. Speech 
+            \nmay be slurred; balance, 
+            \nvision, reaction time and 
+            \nhearing will be impaired. 
+            \nProbably not thinking straight.
+            \n"
+            android:gravity="right"
+            android:padding="3dip"/>
+    </TableRow>
+ <View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
+   <TableRow>
+      
+        <TextView
+            android:layout_column="1"
+            android:text="0.13 - 0.15 BAC"
+            android:padding="3dip"/>
+        <TextView
+            android:text="Very obviously drunk. 
+            \nSevere impairment to 
+            \njudgment, perception, 
+            \nand major motor skills. 
+            \nVery slow reaction time. 
+            \nBlurred vision, loss 
+            \nof balance and slurred 
+            \nspeech. Feelings of well
+             \nbeing starting to be 
+             \nreplaced by anxiety and 
+             \nrestlessness (dysphoria). 
+             \nVomiting common.
+             \n"
+            android:gravity="right"
+            android:padding="3dip"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
+
+    <TableRow>
+      
+        <TextView
+            android:layout_column="1"
+            android:text="0.16 - 0.19 BAC"
+            android:padding="3dip"/>
+        <TextView
+            android:text="The drinker has the 
+            \nappearance of a sloppy drunk. 
+            \nAt this point, most drinkers 
+            \nbegin to feel incapacitated. 
+            \nMany social drinkers will 
+            \npass out. Nausea begins to 
+            \nset in and the drinker has 
+            \ndifficulty focusing on any object.
+            \n"
+            android:gravity="right"
+            android:padding="3dip"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
+     <TableRow>
+      
+        <TextView
+            android:layout_column="1"
+            android:text="0.20 BAC"
+            android:padding="3dip"/>
+        <TextView
+            android:text="Out of it. Confused. 
+            \nDizzy. Requires help to stand 
+            \nor walk. If injured may 
+            \nnot feel the pain. 
+            \nNausea and vomiting. 
+            \nThe gag reflex is impaired 
+            \nand you can choke if you 
+            \ndo vomit. Blackouts are likely.
+            \n"
+            android:gravity="right"
+            android:padding="3dip"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
+     <TableRow>
+      
+        <TextView
+            android:layout_column="1"
+            android:text="0.25 BAC"
+            android:padding="3dip"/>
+        <TextView
+            android:text="All mental, physical 
+            \nand sensory functions are 
+            \nseverely impaired. Near total 
+            \nloss of motor function control. 
+            \nIncreased risk of asphyxiation 
+            \nfrom choking on vomit and of 
+            \nseriously injuring yourself 
+            \nby falls or other accidents.
+            \n"
+            android:gravity="right"
+            android:padding="3dip"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
+    <TableRow>
+      
+        <TextView
+            android:layout_column="1"
+            android:text="0.30 - 0.40 BAC"
+            android:padding="3dip"/>
+        <TextView
+            android:text="Extremely life threatening. 
+            \nYou have little comprehension 
+            \nof where you are. You may 
+            \npass out suddenly and be 
+            \ndifficult to awaken. 
+            \nComplete unconsciousness. 
+            \nComa is possible. This 
+            \nis the level of surgical 
+            \nanesthesia. Death may occur.
+            \n"
+            android:gravity="center_vertical|right"
+            
+            android:padding="3dip"/>
+      
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
+</TableLayout>
+</ScrollView>

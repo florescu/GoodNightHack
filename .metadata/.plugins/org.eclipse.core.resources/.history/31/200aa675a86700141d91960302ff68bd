@@ -45,9 +45,5 @@ public class MainActivity extends Activity {
     	startActivity(intent);
     }
    
-    public void showBacTable(View view){
-    	Intent intent = new Intent(this, BacTable.class);
-    	startActivity(intent);
-    }
     
 }//class

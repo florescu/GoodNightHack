@@ -441,10 +441,11 @@ int layout abc_search_dropdown_item_icons_2line 0x7f030014
 int layout abc_search_view 0x7f030015
 int layout abc_simple_dropdown_hint 0x7f030016
 int layout activity_main 0x7f030017
-int layout block_number 0x7f030018
-int layout main 0x7f030019
-int layout support_simple_spinner_dropdown_item 0x7f03001a
-int layout take_test 0x7f03001b
+int layout bac_text 0x7f030018
+int layout block_number 0x7f030019
+int layout main 0x7f03001a
+int layout support_simple_spinner_dropdown_item 0x7f03001b
+int layout take_test 0x7f03001c
 int menu main 0x7f0c0000
 int string Achievements_text 0x7f0a0012
 int string BAC_text 0x7f0a0016
