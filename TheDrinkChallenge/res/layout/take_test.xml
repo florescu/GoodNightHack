@@ -7,34 +7,52 @@
     
 	<TextView
         android:id="@+id/testResultString"
-	    android:layout_width="fill_parent"
+	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:text="@string/testResult"
     />
 	
 	<TextView
         android:id="@+id/pointsBalanceString"
-	    android:layout_width="fill_parent"
+	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:text="@string/pointsBalance"
     />
 	
+
+	
 	<TextView
         android:id="@+id/monthDayString"
-	    android:layout_width="fill_parent"
+	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:text="@string/monthDay"
     />
 	
 	<TextView
         android:id="@+id/networkTimeString"
-	    android:layout_width="fill_parent"
+	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:text="@string/networkTime"
+<<<<<<< HEAD
 <<<<<<< HEAD
     /> 
 =======
     />
 >>>>>>> parent of 921b4f5... gave up trying to obtain network time
+=======
+    />
+	
+		<TextView
+        android:id="@+id/daysInRowString"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/daysInRow"
+    />
+		
+		
+=======
+    /> -->
+>>>>>>> origin/master
+>>>>>>> origin/master
     
 </LinearLayout>

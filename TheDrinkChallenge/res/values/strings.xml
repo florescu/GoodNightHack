@@ -18,5 +18,7 @@
 	<string name="pointsBalance">Balance: </string>
 	<string name="monthDay">Day of Test in 4 weeks: </string>
 	<string name="networkTime">Network time: </string>
+	<string name="daysInRow"></string>
+	<string name="OK"></string>
 	
 </resources>
