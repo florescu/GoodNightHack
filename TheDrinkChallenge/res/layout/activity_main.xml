@@ -9,7 +9,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.thedrinkchallenge.www.MainActivity" >
-
+	
+    <TextView
+        android:id="@+id/balanceMainScreen"
+    	android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/balanceMainScreen_text" 
+    />    
+       
     <Button
         android:id="@+id/takeTestButton"
         android:layout_width="match_parent"
@@ -30,7 +37,8 @@
         android:id="@+id/claimRewardsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Claim_Rewards_text" />
+        android:text="@string/Claim_Rewards_text" 
+        android:onClick="displayReward"/>
      
       
       

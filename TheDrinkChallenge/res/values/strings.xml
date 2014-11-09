@@ -21,7 +21,7 @@
 	<string name="daysInRow7"></string>
 	<string name="daysInRow14"></string>
 	<string name="daysInRow28"></string>
-		
-	
-	
+	<string name="reward"></string>
+	<string name="balanceMainScreen_text">"Balance: "</string>
+			
 </resources>
