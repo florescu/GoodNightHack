@@ -31,6 +31,10 @@
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:text="@string/networkTime"
+<<<<<<< HEAD
     /> 
+=======
+    />
+>>>>>>> parent of 921b4f5... gave up trying to obtain network time
     
 </LinearLayout>
