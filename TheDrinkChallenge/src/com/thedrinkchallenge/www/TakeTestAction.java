@@ -1,8 +1,5 @@
 package com.thedrinkchallenge.www;
 
-import org.apache.commons.net.ntp.NTPUDPClient;
-import org.apache.commons.net.ntp.TimeInfo;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
