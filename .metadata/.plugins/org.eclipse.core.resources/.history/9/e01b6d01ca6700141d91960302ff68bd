@@ -1,8 +1,8 @@
 package com.thedrinkchallenge.www;
 
-/*import org.apache.commons.*;
+import org.apache.commons.*;
 import org.apache.commons.net.ntp.NTPUDPClient;
-import org.apache.commons.net.ntp.TimeInfo;*/
+import org.apache.commons.net.ntp.TimeInfo;
 
 import android.app.Activity;
 import android.content.Context;
@@ -37,20 +37,18 @@ public class TakeTestAction extends Activity {
         Double rd = r.nextDouble();
         testResult.setText(rd + "");
         
-       /* String TIME_SERVER = "time-a.nist.gov";   
+        String TIME_SERVER = "time-a.nist.gov";   
         NTPUDPClient timeClient = new NTPUDPClient();
         try{
 	        InetAddress inetAddress = InetAddress.getByName(TIME_SERVER);
 	        TimeInfo timeInfo = timeClient.getTime(inetAddress);
 	        long returnTime = timeInfo.getMessage().getTransmitTimeStamp().getTime();
 	        Date time = new Date(returnTime);
-	        TextView networkTime = (TextView) findViewById(R.id.networkTimeString);
-            networkTime.setText("Network time: " + time);
         }
         catch(Exception e)
         {
         	e.printStackTrace();
-        }*/
+        }
         
         
         SharedPreferences pref = getApplicationContext().getSharedPreferences("UserPref", 0); 
