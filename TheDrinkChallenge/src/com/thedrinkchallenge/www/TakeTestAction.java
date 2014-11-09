@@ -1,21 +1,14 @@
 package com.thedrinkchallenge.www;
 
+import java.util.Random;
+
 import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.location.Location;
-import android.location.LocationManager;
-import android.net.ConnectivityManager;
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.telephony.TelephonyManager;
-import android.util.Log;
 import android.widget.TextView;
-
-import java.net.InetAddress;
-import java.util.*;
 
 public class TakeTestAction extends Activity {
 	public static final String TIME_SERVER = "time-a.nist.gov";
@@ -66,6 +59,7 @@ public class TakeTestAction extends Activity {
         
         //Keep track of number of days the user didn't take the test in a month.
         int noOfDaysTestNotTaken = pref.getInt("noOfDaysTestNotTaken", 0);
+        int daysInRow = pref.getInt("daysInRow", 0);
         
         //Get month day.
         int monthDay = pref.getInt("currentMonthDay", 0);
@@ -79,23 +73,59 @@ public class TakeTestAction extends Activity {
         	currentPointsForMonth = 1;
         	noOfDaysTestNotTaken = 0;
         }
-        else if (currentPointsForMonth + 1 == monthDay)
+        else if (currentPointsForMonth + 1 == monthDay){
         	currentPointsForMonth++;
+        	daysInRow++;
+        	
+        }
         //else it means they stopped so start from 1 again.
         else if (currentPointsForMonth + 1 < monthDay)
         {
         	noOfDaysTestNotTaken++;
-        	currentPointsForMonth = 1; //reset to 1. 
+        	currentPointsForMonth = 1; //reset to 1.
+        	daysInRow = 1;
+        }
+        
+        TextView daysInRowString = (TextView) findViewById(R.id.daysInRowString);
+
+      
+        
+        if(daysInRow == 7){
+        	
+        	  AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+              alertDialog.setTitle("Achievement Unlocked - Rookie responsible drinker");
+              alertDialog.setMessage("You have taken the test 7 days in a row!");
+             
+              alertDialog.show();
+        }
+        
+        else if(daysInRow == 14){
+        	AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+            alertDialog.setTitle("Achievement Unlocked - Professional responsible drinker");
+            alertDialog.setMessage("You have taken the test 14 days in a row!");
+           
+            alertDialog.show();
+        }
+        
+        else if(daysInRow == 28){
+        	AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+            alertDialog.setTitle("Achievement Unlocked - World Class responsible drinker");
+            alertDialog.setMessage("You have taken the test 28 days in a row!");
+           
+            alertDialog.show();
+        	
         }
         
         //Update the current number of points.
         currentPoints += currentPointsForMonth + pointsForTest;
-        editor.putInt("currentPoints", currentPoints);
+        editor.putInt("currentPoints", currentPoints); //total nr of points
         editor.putInt("noOfDaysTestNotTaken", noOfDaysTestNotTaken);
-        editor.putInt("currentPointsForMonth", currentPointsForMonth);
+        editor.putInt("currentPointsForMonth", currentPointsForMonth); //nr of points for entire month
         editor.putInt("currentMonthDay", monthDay);
+        editor.putInt("daysInRow", daysInRow);
         editor.commit();
         
+
         //Display currentNumberOfPoints
         TextView balance = (TextView) findViewById(R.id.pointsBalanceString);
         balance.setText("Balance: " + currentPoints);
@@ -103,6 +133,9 @@ public class TakeTestAction extends Activity {
         //Display current day in 4 weeks period:
         TextView monthDayString = (TextView) findViewById(R.id.monthDayString);
         monthDayString.setText("Day of Test in 4 weeks: " + monthDay);
+        
+
+        
         
     }
 }

@@ -7,30 +7,41 @@
     
 	<TextView
         android:id="@+id/testResultString"
-	    android:layout_width="fill_parent"
+	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:text="@string/testResult"
     />
 	
 	<TextView
         android:id="@+id/pointsBalanceString"
-	    android:layout_width="fill_parent"
+	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:text="@string/pointsBalance"
     />
 	
+
+	
 	<TextView
         android:id="@+id/monthDayString"
-	    android:layout_width="fill_parent"
+	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:text="@string/monthDay"
     />
 	
 	<TextView
         android:id="@+id/networkTimeString"
-	    android:layout_width="fill_parent"
+	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:text="@string/networkTime"
     />
+	
+		<TextView
+        android:id="@+id/daysInRowString"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/daysInRow"
+    />
+		
+		
     
 </LinearLayout>
