@@ -1683,7 +1683,6 @@ containing a value of this type.
         public static final int list_item=0x7f090027;
         public static final int middle=0x7f09001d;
         public static final int monthDayString=0x7f090050;
-        public static final int networkTimeString=0x7f090051;
         public static final int never=0x7f090017;
         public static final int none=0x7f09000f;
         public static final int normal=0x7f09000b;
